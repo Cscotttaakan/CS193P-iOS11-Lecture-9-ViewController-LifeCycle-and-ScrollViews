@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		EAFC86A01FED7F88009FE024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFC869F1FED7F88009FE024 /* AppDelegate.swift */; };
-		EAFC86A21FED7F88009FE024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFC86A11FED7F88009FE024 /* ViewController.swift */; };
+		EAFC86A21FED7F88009FE024 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFC86A11FED7F88009FE024 /* ImageViewController.swift */; };
 		EAFC86A51FED7F88009FE024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFC86A31FED7F88009FE024 /* Main.storyboard */; };
 		EAFC86A71FED7F88009FE024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFC86A61FED7F88009FE024 /* Assets.xcassets */; };
 		EAFC86AA1FED7F88009FE024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFC86A81FED7F88009FE024 /* LaunchScreen.storyboard */; };
+		EAFC86B31FED8413009FE024 /* DemoURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFC86B21FED8413009FE024 /* DemoURLs.swift */; };
+		EAFC86B51FED853A009FE024 /* oval.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAFC86B41FED853A009FE024 /* oval.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAFC869C1FED7F88009FE024 /* Lecture 9 - Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lecture 9 - Cassini.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFC869F1FED7F88009FE024 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAFC86A11FED7F88009FE024 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAFC86A11FED7F88009FE024 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		EAFC86A41FED7F88009FE024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAFC86A61FED7F88009FE024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFC86A91FED7F88009FE024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFC86AB1FED7F88009FE024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFC86B21FED8413009FE024 /* DemoURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURLs.swift; sourceTree = "<group>"; };
+		EAFC86B41FED853A009FE024 /* oval.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oval.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		EAFC869E1FED7F88009FE024 /* Lecture 9 - Cassini */ = {
 			isa = PBXGroup;
 			children = (
-				EAFC869F1FED7F88009FE024 /* AppDelegate.swift */,
-				EAFC86A11FED7F88009FE024 /* ViewController.swift */,
+				EAFC86A11FED7F88009FE024 /* ImageViewController.swift */,
 				EAFC86A31FED7F88009FE024 /* Main.storyboard */,
-				EAFC86A61FED7F88009FE024 /* Assets.xcassets */,
-				EAFC86A81FED7F88009FE024 /* LaunchScreen.storyboard */,
+				EAFC86B21FED8413009FE024 /* DemoURLs.swift */,
+				EAFC86B41FED853A009FE024 /* oval.jpg */,
+				EAFC86B11FED7FAB009FE024 /* Supporting Files */,
 				EAFC86AB1FED7F88009FE024 /* Info.plist */,
 			);
 			path = "Lecture 9 - Cassini";
+			sourceTree = "<group>";
+		};
+		EAFC86B11FED7FAB009FE024 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC869F1FED7F88009FE024 /* AppDelegate.swift */,
+				EAFC86A61FED7F88009FE024 /* Assets.xcassets */,
+				EAFC86A81FED7F88009FE024 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFC86AA1FED7F88009FE024 /* LaunchScreen.storyboard in Resources */,
+				EAFC86B51FED853A009FE024 /* oval.jpg in Resources */,
 				EAFC86A71FED7F88009FE024 /* Assets.xcassets in Resources */,
 				EAFC86A51FED7F88009FE024 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFC86A21FED7F88009FE024 /* ViewController.swift in Sources */,
+				EAFC86A21FED7F88009FE024 /* ImageViewController.swift in Sources */,
 				EAFC86A01FED7F88009FE024 /* AppDelegate.swift in Sources */,
+				EAFC86B31FED8413009FE024 /* DemoURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +291,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 663TR68DHM;
 				INFOPLIST_FILE = "Lecture 9 - Cassini/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DeimanTechnology.Lecture-9---Cassini";
+				PRODUCT_BUNDLE_IDENTIFIER = "DeimanTechnology.Lecture-9-Cassini";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +306,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 663TR68DHM;
 				INFOPLIST_FILE = "Lecture 9 - Cassini/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DeimanTechnology.Lecture-9---Cassini";
+				PRODUCT_BUNDLE_IDENTIFIER = "DeimanTechnology.Lecture-9-Cassini";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
